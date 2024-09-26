@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EB1616;
+    --primary: #FAD4A3;
     --secondary: #191C24;
     --light: #6C7293;
     --dark: #000000;
@@ -81,6 +81,7 @@ body{
 .btn {
     font-weight: 500;
     transition: .5s;
+    font-size: 0.8em;
 }
 
 .btn-square {
@@ -292,7 +293,7 @@ body{
 }
 
 .team-item .team-social .btn:hover {
-    color: #FFFFFF;
+    color: #000;
     background: var(--primary);
 }
 
@@ -457,8 +458,9 @@ body{
 
 /* Award title */
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    min-height: 62px;
     margin-bottom: 10px;
 }
 
@@ -516,12 +518,14 @@ body{
     background: var(--primary);
     font-size: 22px;
     border-radius: 45px;
-    transition: .5s;
+    /* transition: .2s; */
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: var(--dark);
+    color: var(--primary);
+    background-color:var(--dark) ;
+    border: 2px solid var(--primary);
 }
 
 .testimonial-carousel .owl-item img {

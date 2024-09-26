@@ -829,7 +829,23 @@
     <a href="https://wa.me/+919592708300" class="whatsapp-icon"><i class="bi bi-whatsapp"></i></a>
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+   
+   
+   
+   <script> // script to show more services - Harsh Dubey 
+        document.getElementById('toggleServices').addEventListener('click', function() {
+            const moreServices = document.getElementById('moreServices');
+            const isVisible = moreServices.classList.contains('d-none');
+            
+            if (isVisible) {
+                moreServices.classList.remove('d-none');
+                this.textContent = 'Show Less Services'; 
+            } else {
+                moreServices.classList.add('d-none');
+                this.textContent = 'Show More Services';
+            }
+        });
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

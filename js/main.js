@@ -58,18 +58,4 @@
   
 })(jQuery);
 
-document
-  .getElementById("toggleServices")
-  .addEventListener("click", function () {
-    const moreServices = document.getElementById("moreServices");
 
-    if (moreServices.classList.contains("d-none")) {
-      moreServices.classList.remove("d-none");
-      this.textContent = "Show Less Services"; // Change text to indicate more services are shown
-      // Optionally scroll to the newly revealed services
-      moreServices.scrollIntoView({ behavior: "smooth" });
-    } else {
-      moreServices.classList.add("d-none");
-      this.textContent = "Show More Services"; // Change text back to original
-    }
-  });
